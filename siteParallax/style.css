@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+}
+
+.content-1 {
+  background: url("images/imagem1.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+.content-2 {
+  background: url("images/imagem2.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+.content-3 {
+  background: url("images/imagem3.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+.content-4 {
+  background: url("images/imagem4.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+.content-5 {
+  background: url("images/imagem5.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+.content-6 {
+  background: url("images/imagem6.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+.content h1 {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 1);
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+.text {
+  text-align: center;
+  padding: 30px 100px;
+}
+
+.text h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.text p {
+  text-align: justify;
+  margin-bottom: 15px;
+}

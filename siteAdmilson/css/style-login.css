@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --black: #000;
+  --blue: #000080;
+  --yellow: #fae92d;
+  --white: #ffffff;
+}
+
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: var(--yellow);
+  color: var(--white);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: var(--blue);
+}
+
+.container-login {
+  max-width: 850px;
+  background-color: var(--white);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 30px;
+  flex-direction: row-reverse;
+  border-radius: 15px;
+}
+
+.img-login {
+  width: 22vw;
+}
+
+.container-login .login-form .title {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.container-login .login-form .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 25px;
+  background-color: var(--yellow);
+}
+
+.container-login .login-form .input-box {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+
+.container-login .login-form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  transition: all ease 0.3s;
+}
+
+.container-login .login-form .input-box input:focus,
+.container-login .login-form .input-box input:valid {
+  border-color: var(--blue);
+}
+
+.container-login .login-form .input-box input[type="submit"] {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.container-login .login-form .input-box input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.container-login .login-form .forgot {
+  margin: 20px 0;
+}
+
+.container-login .login-form .forgot a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.container-login .login-form span.erro {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: red;
+}
+
+.container-login .login-form .forgot a:hover {
+  color: var(--blue);
+}
+
+.container-login .img-login {
+  margin-right: 50px;
+  border-right: 1px solid #666;
+  padding: 0 25px;
+}
+
+#icon {
+  position: absolute;
+  background: url("../images/show.png");
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-size: cover;
+  right: 15px;
+  transition: all ease 200ms;
+}
+
+#icon.hide {
+  background: url("../images/hide.png");
+  background-size: cover;
+}

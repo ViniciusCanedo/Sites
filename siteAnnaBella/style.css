@@ -1,0 +1,60 @@
+body {
+  background: #d2d2c1 url("images/fundo.png");
+  font: 18px Arial, Helvetica, sans-serif;
+}
+
+#container {
+  width: 900px;
+  background: #e8e8d9;
+  margin: 0 auto;
+}
+
+#menu {
+  background: #c5c5b2;
+  padding: 18px;
+  text-align: center;
+}
+
+#menu a {
+  color: #4b566a;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.content {
+  padding: 10px;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.content ul li {
+  color: #828271;
+  font-weight: bold;
+}
+
+.content h1,
+h4 {
+  text-align: center;
+  color: #828271;
+}
+
+.content h1 {
+  font-size: 1.5em;
+}
+
+.content .fotos {
+  display: flex;
+  justify-content: center;
+}
+
+.content .fotos img {
+  width: 400px;
+  border: 10px solid #828271;
+  margin: 10px 0;
+}
+
+.content h4 a {
+  color: #4b566a;
+  text-decoration: none;
+}

@@ -1,0 +1,489 @@
+/********** Estilos Gerais *************/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --black: #000;
+  --blue: #000080;
+  --yellow: #fae92d;
+  --white: #ffffff;
+}
+
+h2 {
+  font-size: 4.5rem;
+  color: var(--white);
+}
+
+h3 {
+  font-size: 4rem;
+  color: var(--white);
+}
+
+p {
+  font-size: 2rem;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.underline-title {
+  width: 30rem;
+  background-color: var(--yellow);
+  height: 3px;
+  margin: 5px 0;
+}
+
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: var(--yellow);
+  color: var(--white);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  transition: all 0.2s linear;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.whats-button {
+  width: 60px;
+  z-index: 1000;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  transition: all linear 0.2s;
+}
+
+.whats-button:hover {
+  transform: scale(1.1);
+}
+
+/********** Estilos Menu *************/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--blue);
+  z-index: 1000;
+  padding: 1rem 7%;
+  border-bottom: 0.2rem solid var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo img {
+  width: 200px;
+}
+
+header #menu-icon {
+  font-size: 35px;
+  color: var(--white);
+  cursor: pointer;
+  display: none;
+}
+
+header #navbar {
+  display: flex;
+}
+
+header #navbar a {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+header #navbar a:hover {
+  color: var(--yellow);
+}
+
+/********** Estilos Home *************/
+
+#home {
+  background: url(../images/bg-home-header.png) no-repeat center;
+  background-size: cover;
+  height: 70vh;
+  display: relative;
+}
+
+#home h3 {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  text-align: center;
+  width: 60vw;
+  text-transform: none;
+}
+
+/********** Estilos Section Sobre *************/
+
+.container {
+  padding: 1rem 12%;
+}
+
+#sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+}
+
+#sobre h2 {
+  color: var(--black);
+  padding-top: 1rem;
+}
+
+#sobre .sobre-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+#sobre .sobre-content img {
+  width: 30%;
+  border: 5px outset var(--yellow);
+}
+
+#sobre .sobre-content p {
+  width: 50%;
+}
+
+/********** Estilos Section Serviços *************/
+
+#servicos {
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 0;
+}
+
+#servicos h2 {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+#servicos .underline-title {
+  width: 15rem;
+  justify-self: center;
+}
+
+.servicos-content {
+  padding: 3rem 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1500px;
+}
+
+.card-servico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  background-color: var(--white);
+  border-radius: 15px;
+  height: 350px;
+  transition: all linear 0.2s;
+}
+
+.card-servico:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 1px solid var(--yellow);
+}
+
+.card-servico .icon-servico {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  color: var(--yellow);
+}
+
+.card-servico p {
+  text-align: center;
+}
+
+/********** Estilos Section Contato *************/
+
+#contato {
+  background: url(../images/bg-contato-section.png) no-repeat center;
+  background-size: cover;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px 0;
+  margin-top: 50px;
+}
+
+#contato .underline-title {
+  width: 12rem;
+  margin-bottom: 20px;
+}
+
+#contato p {
+  width: 40%;
+  color: var(--white);
+  text-align: center;
+  font-weight: 500;
+  padding: 10px;
+  font-size: 2.2rem;
+}
+
+#contato span {
+  color: var(--white);
+  font-size: 1.3rem;
+  font-weight: 500;
+  align-self: flex-start;
+  margin-left: 15%;
+  margin-bottom: 50px;
+}
+
+#input-nome {
+  grid-area: nome;
+}
+
+#input-celular {
+  grid-area: celular;
+}
+
+#input-mensagem {
+  grid-area: mensagem;
+}
+
+#btn-submit {
+  grid-area: submit;
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color: var(--yellow);
+  color: var(--white);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  justify-self: center;
+  margin-bottom: 20px;
+  transition: all linear 200ms;
+}
+
+#btn-submit:hover {
+  background-color: var(--white);
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
+}
+
+.input-form {
+  height: 40px;
+  border: 2px solid var(--yellow);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+form {
+  width: 70vw;
+  margin-top: 25px;
+  display: grid;
+  grid-template:
+    "nome celular"
+    "whats texto"
+    "mensagem mensagem"
+    "submit submit" /50%;
+  gap: 20px;
+}
+
+/************ Estilos Footer ************/
+footer {
+  background-color: var(--blue);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  color: var(--white);
+  margin: 30px auto;
+  width: 70%;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+/************ Media Queries *************/
+
+@media (min-width: 1400px) {
+  header .logo img {
+    width: 250px;
+  }
+
+  #sobre .sobre-content img {
+    width: 25%;
+    border: 5px outset var(--yellow);
+  }
+}
+
+@media (max-width: 1270px) {
+  .servicos-content {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1150px) {
+  #sobre .sobre-content img {
+    width: 40%;
+    border: 5px outset var(--yellow);
+  }
+}
+@media (max-height: 1080px) {
+  #home {
+    height: 90vh;
+  }
+
+  #home h3 {
+    top: 45%;
+  }
+}
+
+@media (max-width: 900px) {
+  h3 {
+    font-size: 3rem;
+  }
+
+  header #menu-icon {
+    display: block;
+  }
+
+  header #navbar {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: var(--blue);
+    position: absolute;
+    top: 80px;
+    flex-direction: column;
+    left: -100%;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms ease-out;
+  }
+
+  header #navbar a {
+    line-height: 6rem;
+    border-bottom: 0.1rem solid var(--white);
+    border-collapse: collapse;
+    width: 75%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  header #navbar .home {
+    border-top: 0.1rem solid var(--white);
+  }
+
+  header #navbar.active {
+    left: 0;
+  }
+
+  #home {
+    height: 70vh;
+  }
+
+  #home h3 {
+    top: 35%;
+  }
+
+  #sobre .sobre-content img {
+    display: none;
+  }
+
+  #sobre .sobre-content p {
+    width: 100%;
+  }
+
+  #btn-submit {
+    align-self: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  #contato p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 670px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .underline-title {
+    width: 15rem;
+  }
+
+  #home {
+    height: 60vh;
+  }
+
+  #home h3 {
+    top: 32%;
+    left: 15%;
+    width: 70vw;
+  }
+}
+
+@media (max-width: 420px) {
+  h3 {
+    font-size: 2rem;
+  }
+
+  #home {
+    height: 40vh;
+  }
+
+  #home h3 {
+    top: 22%;
+    left: 8%;
+    width: 85vw;
+  }
+
+  #contato p {
+    width: 80%;
+  }
+
+  form {
+    width: 80vw;
+  }
+}

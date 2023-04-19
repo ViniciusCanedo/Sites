@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+body {
+  background: url(images/fundo.png) repeat-x;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-menu nav {
+  margin-top: 20px;
+}
+
+.logo-menu nav ul {
+  background-color: #bb0035;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.logo-menu nav ul img {
+  height: 20px;
+}
+
+.logo-menu nav ul li {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.logo-menu nav ul li:hover,
+.home .logo-menu nav ul .home,
+.brasil .logo-menu nav ul .brasil,
+.internacional .logo-menu nav ul .internacional,
+.economia .logo-menu nav ul .economia,
+.saude .logo-menu nav ul .saude,
+.ciencia .logo-menu nav ul .ciencia,
+.fotos .logo-menu nav ul .fotos {
+  background-color: #de003e;
+}
+
+.logo-menu nav ul li a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-fotos {
+  margin-top: 75px;
+  background: #e6e6e6 url(images/fundo-caixa.png);
+  padding: 10px;
+}
+
+.content-fotos .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.content-fotos .galeria img {
+  width: 32%;
+}
+
+.content .colunas {
+  background: #e6e6e6 url(images/fundo-caixa.png);
+  padding: 10px;
+  margin-top: 75px;
+  height: fit-content;
+}
+
+.content .nav-lateral {
+  width: 200px;
+}
+
+.content .principal-content {
+  width: 325px;
+}
+
+.content .lateral-content {
+  width: 320px;
+}
+
+.content .colunas .col-content {
+  background-color: #fff;
+  padding: 15px 10px;
+}
+
+.content .colunas .title-section,
+.content-fotos .title-section {
+  color: #fff;
+  background-color: #294c71;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.content .colunas .entrevistas {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.content .colunas .entrevistas li {
+  padding: 10px 0;
+}
+
+.content .colunas .entrevistas li a {
+  text-decoration: none;
+  color: black;
+}
+
+.content .colunas .entrevistas li a:hover {
+  color: #bb0035;
+}
+
+.content .colunas .news-form button {
+  background-color: #bb0035;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.content .colunas .news-form button:hover {
+  background-color: #de003e;
+}
+
+.content .colunas .col-content .article-title {
+  background-color: #bb0035;
+  color: #fff;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.content .colunas .col-content {
+  margin-bottom: 10px;
+}
+
+.content .colunas .last-post img {
+  width: 100%;
+}
+
+.content .colunas .col-content a {
+  text-decoration: none;
+  color: #bb0035;
+  margin-top: 10px;
+}
+
+.content .colunas .mundo-posts .mundo-post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .colunas .mundo-posts hr {
+  margin: 10px 0;
+}
+
+.content .colunas .mundo-posts .mundo-post img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.content .colunas .destaque-post img {
+  width: 100%;
+}
+
+footer {
+  background-color: #294c71;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+footer a {
+  color: #de003e;
+  text-decoration: none;
+  font-weight: bold;
+}

@@ -1,0 +1,1 @@
+<div class="forgot"><a href="classes/recover.php">Esqueceu a senha?</a></div>

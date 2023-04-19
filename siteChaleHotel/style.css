@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 15px;
+  font-family: Helvetica, sans-serif;
+  background-color: #fff url("images/bg.png");
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 740px;
+  max-width: 1180px;
+}
+
+header {
+  background-color: #dbcd87;
+  height: 15.4em;
+  min-height: 250px;
+  position: relative;
+}
+
+header .logo-area {
+  width: 100%;
+  height: 250px;
+  background: url("images/topo-imagem-principal.png") no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header .logo-area a {
+  position: absolute;
+  font-size: 0;
+  background: url("images/logo.png") no-repeat;
+  width: 151px;
+  height: 66px;
+  top: 15px;
+  left: 15px;
+}
+
+header .menu-area {
+  width: 450px;
+  height: 250px;
+  background: url("images/topo-imagem-lateral.png") no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+header .menu-area .content-menu {
+  width: 350px;
+  margin: 0 0 0 80px;
+}
+
+header .menu-area .content-menu .reserva {
+  border-bottom: 1px solid #887b34;
+  border-top: 1px solid #887b34;
+  padding: 8px;
+  font-size: 12px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .menu-area .content-menu .reserva p {
+  color: #887b34;
+}
+
+header .menu-area .content-menu .reserva a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #887b34;
+  padding: 5px;
+  font-weight: 600;
+}
+
+header .menu-area .content-menu .menu {
+  display: flex;
+  margin-top: 15px;
+}
+
+header .menu-area .content-menu ul {
+  list-style: none;
+  margin-left: 5px;
+}
+
+header .menu-area .content-menu ul li {
+  padding: 5px;
+  margin: 2px;
+  display: inline-block;
+}
+
+header .menu-area .content-menu ul li:hover {
+  background-color: #fffbf3;
+}
+
+header .menu-area .content-menu ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #837b4a;
+  font-weight: 600;
+}
+
+.content {
+  margin: 10px 0;
+  display: flex;
+}
+
+.content .principal-content {
+  width: 50%;
+  padding: 20px;
+  background-color: #fcf4be;
+}
+
+.content .principal-content h3 {
+  margin-bottom: 15px;
+  color: #887b34;
+}
+
+.content .principal-content p {
+  margin-bottom: 10px;
+}
+
+.content .aside {
+  width: 50%;
+  padding: 15px;
+  background-color: #e0cba7;
+}
+
+.content .aside-content {
+  display: flex;
+  align-items: start;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+.content .aside-content img {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.content .aside-content .aside-text {
+  width: 68%;
+}
+
+.content .aside-content .aside-text h4 {
+  color: #887b34;
+}
+
+footer {
+  background-color: #dbcd87;
+  text-align: center;
+  padding: 30px 0;
+  color: #837b4a;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 800;
+  color: #4d451a;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <title>Museu Nacional - Início</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <div id="logo">
+          <h1><a href="index.html">Museu Nacional</a></h1>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Exposições</a></li>
+            <li><a href="#">Pesquisas</a></li>
+            <li><a href="#">Acervo</a></li>
+            <li><a href="#">Vídeos</a></li>
+            <li><a href="#">Fotos</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="content">
+        <main>
+          <div class="banner">
+            <img src="images/museu.png" alt="" />
+          </div>
+
+          <div class="info">
+            <div class="info-content">
+              <div class="video">
+                <h2 class="info-title">Vídeo: Conheça o Museu</h2>
+
+                <iframe
+                  src="https://www.youtube.com/embed/RGUYb-hivrc"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="exposicoes">
+                <h2 class="info-title">Exposições</h2>
+                <ul>
+                  <li><a href="#">Os assustadores insetos</a></li>
+                  <li>
+                    <a href="#"
+                      >O crânio e Luiza,a mulher mais velha do Brasil</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#">Preguiça gigante e tigre-dentes-de-sabre</a>
+                  </li>
+                  <li><a href="#">Plantas do Brasil Central</a></li>
+                  <li>
+                    <a href="#">Teresa Cristina: A Imperatiz Arqueóloga</a>
+                  </li>
+                  <li><a href="#">Arte com dinossauros - Paleoarte</a></li>
+                  <li>
+                    <a style="font-weight: bold" href="#">Veja mais(67)</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="info-content">
+              <div class="mapa">
+                <h2 class="info-title">Mapa: Encontre o Museu</h2>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206311665319!2d-43.22871758553315!3d-22.90575998501238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1678387188180!5m2!1spt-BR!2sbr"
+                  width="325"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="historia">
+                <h2 class="info-title">200 anos de historia</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repudiandae consequatur possimus dolorem ea cum. Similique
+                  ipsa velit cupiditate, facilis doloremque esse corrupti totam.
+                  Mollitia alias assumenda soluta at! Eum, nisi.
+                </p>
+                <a style="font-weight: bold; font-size: 0.85rem" href="#"
+                  >Leia mais</a
+                >
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <aside>
+          <div class="depoimento">
+            <img src="images/depoimento.png" />
+          </div>
+
+          <section id="visita">
+            <h4>Agende uma visita</h4>
+            <form>
+              <fieldset>
+                <legend>Selecione uma data:</legend>
+                <label>Data</label>
+                <input
+                  class="campo"
+                  type="text"
+                  id="data"
+                  placeholder="dd/mm/aaaa"
+                />
+
+                <label>Qtd. pessoas</label>
+                <input
+                  class="campo"
+                  type="number"
+                  id="qtd"
+                  style="width: 40px"
+                  placeholder="0"
+                />
+              </fieldset>
+
+              <input
+                class="botao"
+                type="submit"
+                value="Verificar disponibilidade"
+              />
+            </form>
+          </section>
+
+          <section id="galeria">
+            <h4>galeria de fotos</h4>
+            <div class="fotos">
+              <img src="images/imagem1.jpg" width="93" height="93" />
+              <img src="images/imagem2.jpg" width="93" height="93" />
+              <img src="images/imagem3.jpg" width="93" height="93" />
+              <img src="images/imagem4.jpg" width="93" height="93" />
+            </div>
+          </section>
+        </aside>
+      </div>
+
+      <footer>
+        <img src="images/fundo-rodape.png" />
+        <section class="nav-footer">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Exposições</a></li>
+            <li><a href="#">Pesquisas</a></li>
+            <li><a href="#">Acervo</a></li>
+            <li><a href="#">Vídeos</a></li>
+            <li><a href="#">Fotos</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </section>
+        <p>
+          Todos os direitos reservados. Desenvolvido por
+          <a href="https://viniciuscanedo.com/" target="_blank"
+            >Vinícius Canedo</a
+          >.
+        </p>
+      </footer>
+    </div>
+    <!-- FIM CONTAINER -->
+  </body>
+</html>
